@@ -1,0 +1,30 @@
+# ---- Proprietary TASCAM/TEAC binaries (NEVER commit) ----
+# Firmware/driver updater executables
+*us-16x08_firmware*.exe
+*TASCAM_US-16x08*.exe
+# Extracted / carved firmware images and payloads (TASCAM's proprietary data)
+*.bin
+update_swap.bin
+fw_clean/
+fw_payload/
+fw_input/
+fw_out/
+drv_input/
+# Full disassembly dumps of the proprietary image
+full_dis.txt
+*_dis.txt
+
+# ---- Third-party GPL sources & derived binaries (fetch + build locally) ----
+# binutils Blackfin disassembler source — fetch from sourceware, do not redistribute here
+bfin-dis.c
+bfin.h
+opcode/
+# Compiled disassembler + objects
+bfdis.exe
+*.exe
+*.obj
+*.o
+
+# ---- Misc ----
+__pycache__/
+*.pyc
